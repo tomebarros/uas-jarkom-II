@@ -1,0 +1,68 @@
+#home,
+#about h1,
+#ourteam h1,
+#contact h1 {
+  padding-top: 4rem;
+}
+
+form .input {
+  margin-top: 2rem;
+  position: relative;
+}
+
+form .input input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 3px solid var(--bs-body-color);
+  padding: 0.4rem;
+}
+
+form .input input:focus~span,
+form .input input:valid~span {
+  top: -1rem;
+  font-size: 0.8rem;
+  opacity: 1;
+}
+
+form .input span {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 0.9rem;
+  pointer-events: none;
+  opacity: 0.5;
+  transition: .5s all ease;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-login {
+  border: 1px solid var(--bs-body-color);
+  padding: 0.3rem 0;
+  font-size: 1.2rem;
+  transition: .3s ease;
+}
+
+.btn-login:hover {
+  background-color: var(--bs-body-color) !important;
+  color: var(--bs-body-bg);
+}
+
+@media (min-width: 768px) {
+  #home .login {
+    padding: 6rem 4rem;
+    box-shadow: 0px 0px 10rem var(--bs-body-color);
+  }
+}
+
+/* hp */
+@media (max-width: 576px) {
+
+  #home {
+    padding-top: 0;
+  }
+}
