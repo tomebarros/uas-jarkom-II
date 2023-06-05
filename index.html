@@ -2,22 +2,19 @@
 <html lang="en" data-bs-theme="drk">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Jarkom</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="bootstrap-5.3.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tome Ornai Barros | Web JarKom</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="bootstrap-5.3.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top shadow-sm" style="background-color: var(--bs-body-bg);">
+  <nav class="navbar navbar-expand-lg fixed-top shadow-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <!-- <img src="img/logo.png" alt="logo"> -->
-        Kelompok Jarkom
-      </a>
+      <a class="navbar-brand" href="#">Tome Barros</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,146 +22,229 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about">TentangKami</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#ourteam">Team</a>
+            <a class="nav-link" href="#products">Layanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ourteam">Tome</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container pt-5">
-    <div class="row mt-3" id="home">
-      <div class="col-md-6 rounded login d-flex flex-column my-auto">
-        <h1>Login</h1>
-
-        <form action="#" method="post">
-          <div class="input">
-            <input type="text" required>
-            <span>Username</span>
-          </div>
-          <div class="input">
-            <input type="password" required>
-            <span>Password</span>
-          </div>
-
-          <div class="d-grid">
-            <button type="submit" class="btn-login  mt-3" style="background-color: var(--bs-body-text);">Login</button>
-          </div>
-        </form>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/crs1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
       </div>
-
-      <div class="col-md-6">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_hy4txm7l.json" background="transparent"
-          speed="1" style="width: 100%;" loop autoplay></lottie-player>
-        <!-- <img src="img/login.gif" class="img-fluid" alt=""> -->
+      <div class="carousel-item">
+        <img src="img/crs2.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-    <div id="about">
-      <h1 class="text-center">About Us</h1>
+  <div class="container pt-5">
+    <section id="about">
+      <h1 class="text-center">Tentang Kami</h1>
       <div class="row justify-content-around gap-3">
         <div class="col-md">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est corrupti quisquam ea numquam, repudiandae
-          dolorum sed assumenda ullam velit accusamus ipsa suscipit maxime soluta sit odio voluptatem mollitia repellat
-          accusantium hic quas quidem alias eaque excepturi? Unde cumque repellat eaque aspernatur! Atque officiis
-          dolorem excepturi sapiente nisi error molestiae maxime veniam? Reiciendis reprehenderit id rem sint illo
-          officia libero molestiae, natus perferendis quae accusamus tempora maxime enim soluta ea sequi animi nisi,
-          quidem corrupti consequuntur quam? Incidunt molestiae voluptatum unde, nam sed dignissimos, quia voluptates
-          sit, quis ad soluta exercitationem?
+          dolorum sed assumenda ullam velit accusamus ipsa suscipit maxime soluta sit odio voluptatem mollitia
+          repellat
+          accusantium
+          hic quas quidem alias eaque excepturi? Unde cumque repellat eaque aspernatur! Atque officiis dolorem
+          excepturi
+          sapiente nisi error molestiae maxime veniam? Reiciendis reprehenderit id rem sint illo officia libero
+          molestiae,
+          natus perferendis quae accusamus tempora maxime enim soluta ea sequi animi nisi, quidem corrupti
+          consequuntur
+          quam? Incidunt molestiae voluptatum unde, nam sed dignissimos, quia voluptates sit, quis ad soluta
+          exercitationem?
         </div>
         <div class="col-md">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vel dolores quia consequatur, maiores
           obcaecati accusamus! Reiciendis distinctio officiis commodi nesciunt aliquam quam eveniet earum officia,
-          aliquid voluptatem corporis temporibus repellendus culpa cum fuga, soluta laudantium dolorum incidunt
-          accusamus, nam doloribus iure inventore provident qui? Tenetur commodi odit dolore recusandae, esse, nam vero
-          labore nihil, iusto aperiam eius facilis illum consequatur aspernatur. Magnam soluta laborum minima veniam.
-          Non, sint facere perspiciatis maiores eos porro nobis repellat dignissimos eaque a modi temporibus molestiae
-          omnis fugit exercitationem sunt voluptates pariatur! Blanditiis, itaque!
+          aliquid voluptatem
+          corporis temporibus repellendus culpa cum fuga, soluta laudantium dolorum incidunt accusamus, nam doloribus
+          iure inventore provident qui? Tenetur commodi odit dolore recusandae, esse, nam vero labore nihil, iusto
+          aperiam eius
+          facilis illum consequatur aspernatur. Magnam soluta laborum minima veniam. Non, sint facere perspiciatis
+          maiores eos porro nobis repellat dignissimos eaque a modi temporibus molestiae omnis fugit exercitationem
+          sunt
+          voluptates
+          pariatur! Blanditiis, itaque!
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="ourteam" class="mt-5">
+    <section id="products">
+      <h1 class="text-center">Produk & Layanan Terbaik untuk Anda</h1>
+      <div class="row gap-4">
+        <div class="col-lg col-md-12 d-flex justify-content-center">
+          <div class="card py-5 px-2 border-0 shadow-lg rounded-4" style="width: 18rem">
+            <div class="card-body">
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                class="bi bi-credit-card-fill text-danger" viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0V4zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7H0zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1z" />
+              </svg>
+
+              <h5 class="card-title my-5" style="font-size: 2rem">Voucher</h5>
+              <div style="min-height: 15rem;">
+                <p class="card-text" style="font-size: 1rem; letter-spacing: 2px">
+                  Pembelian voucher akses internet yang bisa didapatkan melalui aplikasi, merchant dan reseller untuk
+                  dapat terkoneksi ke jaringan wifi.id di seluruh Indonesia.
+                </p>
+              </div>
+              <div class="d-grid">
+                <a href="#" class="btn btn-outline-success btn-sm">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-md-12 d-flex justify-content-center">
+          <div class="card py-5 px-2 border-0 shadow-lg rounded-4" style="width: 18rem">
+            <div class="card-body">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                class="bi bi-currency-dollar text-danger" viewBox="0 0 16 16">
+                <path
+                  d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
+              </svg>
+              <h5 class="card-title my-5" style="font-size: 2rem">Pascabayar</h5>
+              <div style="min-height: 15rem;">
+                <p class="card-text" style="font-size: 1rem; letter-spacing: 2px">
+                  Bagi Anda pelanggan IndiHome, dapatkan kenyamanan untuk tetap terkoneksi internet di luar rumah
+                  dengan
+                  terhubung ke
+                  semua jaringan wifi.id secara seamless.
+                </p>
+              </div>
+              <div class="d-grid">
+                <a href="#" class="btn btn-outline-success btn-sm">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-md-12 d-flex justify-content-center">
+          <div class="card py-5 px-2 border-0 shadow-lg rounded-4" style="width: 18rem">
+            <div class="card-body">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                class="bi bi-microsoft-teams text-danger" viewBox="0 0 16 16">
+                <path
+                  d="M9.186 4.797a2.42 2.42 0 1 0-2.86-2.448h1.178c.929 0 1.682.753 1.682 1.682v.766Zm-4.295 7.738h2.613c.929 0 1.682-.753 1.682-1.682V5.58h2.783a.7.7 0 0 1 .682.716v4.294a4.197 4.197 0 0 1-4.093 4.293c-1.618-.04-3-.99-3.667-2.35Zm10.737-9.372a1.674 1.674 0 1 1-3.349 0 1.674 1.674 0 0 1 3.349 0Zm-2.238 9.488c-.04 0-.08 0-.12-.002a5.19 5.19 0 0 0 .381-2.07V6.306a1.692 1.692 0 0 0-.15-.725h1.792c.39 0 .707.317.707.707v3.765a2.598 2.598 0 0 1-2.598 2.598h-.013Z" />
+                <path
+                  d="M.682 3.349h6.822c.377 0 .682.305.682.682v6.822a.682.682 0 0 1-.682.682H.682A.682.682 0 0 1 0 10.853V4.03c0-.377.305-.682.682-.682Zm5.206 2.596v-.72h-3.59v.72h1.357V9.66h.87V5.945h1.363Z" />
+              </svg>
+              <h5 class="card-title my-5" style="font-size: 2rem">Bisnis</h5>
+              <div style="min-height: 15rem;">
+                <p class="card-text" style="font-size: 1rem; letter-spacing: 2px">
+                  Bagi Anda para pelaku bisnis dan pemilik lokasi yang ingin menyediakan akses internet dan produk
+                  wifi.id
+                  untuk pelanggan
+                  atau pengunjung di lokasinya.
+                </p>
+              </div>
+              <div class="d-grid">
+                <a href="#" class="btn btn-outline-success btn-sm">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-md-12 d-flex justify-content-center">
+
+          <div class="card py-5 px-2 border-0 shadow-lg rounded-4" style="width: 18rem">
+            <div class="card-body">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                class="bi bi-cloud-check-fill text-danger" viewBox="0 0 16 16">
+                <path
+                  d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 4.854-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+              </svg>
+              <h5 class="card-title my-5" style="font-size: 2rem">Kemitraan</h5>
+              <div style="min-height: 15rem;">
+                <p class="card-text" style="font-size: 1rem; letter-spacing: 2px">
+                  Bagi Anda para mitra yang ingin menyediakan dan menjual kembali akses internet untuk pelanggan atau
+                  pengunjung di
+                  lokasinya.
+                </p>
+              </div>
+              <div class="d-grid mt-auto">
+                <a href="#" class="btn btn-outline-success btn-sm">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ourteam" class="mt-5">
       <h1 class="text-center">Our Team</h1>
       <div class="row justify-content-center mx-auto">
-
-        <div class="col-lg col-md-6 mb-4">
-          <div class="card" style="width: 100%;">
-            <img src="img/user.png" class="card-img-top img-thumbnail rounded-circle" alt="Tome Ornai Barros">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card shadow-lg border-0 rounded-2 py-4 px-4 rounded-4" style="width: 100%">
+            <img src="img/user.png" style="width: 200px;" class="card-img-top mx-auto img-thumbnail rounded-circle"
+              alt="Tome Ornai Barros" />
             <div class="card-body">
               <h5 class="card-title text-center">Tome Ornai Barros</h5>
-              <p class="card-text text-center">Web Developer</p>
+              <div class="d-flex flex-column my-2">
+                <!-- <span class="text-center">Web Developer</span> -->
+                <span class="text-center">21120055</span>
+                <span class="text-center">Kelas A</span>
+                <span class="text-center">Teknik Informatika S1</span>
+              </div>
               <div class="d-grid gap-3">
-                <a href="#" class="btn btn-primary"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="btn btn-primary"><i class="bi bi-linkedin"></i></a>
-                <a href="#" class="btn btn-primary"><i class="bi bi-youtube"></i></a>
+                <a href="https://github.com/tomebarros" target="_blank" class="btn btn-dark"><i
+                    class="bi bi-github"></i></a>
+                <a href="https://www.youtube.com/@tomebarros2153" target="_blank" id="yt" class="btn"><i
+                    class="bi bi-youtube"></i></a>
+                <a href="https://www.instagram.com/tome_barros" target="_blank" id="ig" class="btn"><i
+                    class="bi bi-instagram"></i></a>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-lg col-md-6 mb-4">
-          <div class="card" style="width: 100%;">
-            <img src="img/user.png" class="card-img-top img-thumbnail rounded-circle" alt="Tome Ornai Barros">
-            <div class="card-body">
-              <h5 class="card-title text-center">Tome Ornai Barros</h5>
-              <p class="card-text text-center">Web Developer</p>
-              <div class="d-grid gap-3">
-                <a href="#" class="btn btn-primary"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="btn btn-primary"><i class="bi bi-linkedin"></i></a>
-                <a href="#" class="btn btn-primary"><i class="bi bi-youtube"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg col-md-6 mb-4">
-          <div class="card" style="width: 100%;">
-            <img src="img/user.png" class="card-img-top img-thumbnail rounded-circle" alt="Tome Ornai Barros">
-            <div class="card-body">
-              <h5 class="card-title text-center">Tome Ornai Barros</h5>
-              <p class="card-text text-center">Web Developer</p>
-              <div class="d-grid gap-3">
-                <a href="#" class="btn btn-primary"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="btn btn-primary"><i class="bi bi-linkedin"></i></a>
-                <a href="#" class="btn btn-primary"><i class="bi bi-youtube"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg col-md-6 mb-4">
-          <div class="card" style="width: 100%;">
-            <img src="img/user.png" class="card-img-top img-thumbnail rounded-circle" alt="Tome Ornai Barros">
-            <div class="card-body">
-              <h5 class="card-title text-center">Tome Ornai Barros</h5>
-              <p class="card-text text-center">Web Developer</p>
-              <div class="d-grid gap-3">
-                <a href="#" class="btn btn-primary"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="btn btn-primary"><i class="bi bi-linkedin"></i></a>
-                <a href="#" class="btn btn-primary"><i class="bi bi-youtube"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
       </div>
-    </div>
+    </section>
   </div>
 
-
-  <footer class="d-flex justify-content-center p-5 mt-5" style="background-color: var(--bs-body-bg);">
-    <a href="#home" class="text-center text-decoration-none" style="color: var(--bs-body);">&copy; Tome Ornai Barros</a>
+  <footer class="d-flex justify-content-center p-5 mt-5" style="background-color: var(--bs-body-bg)">
+    <a href="#home" class="text-center text-decoration-none" style="color: var(--bs-body)">&copy; Tome Ornai
+      Barros</a>
   </footer>
-
 
   <script src="bootstrap-5.3.0/js/bootstrap.min.js"></script>
 </body>

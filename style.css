@@ -1,68 +1,39 @@
-#home,
+/* #home {
+  max-height: 100vh;
+} */
+
 #about h1,
 #ourteam h1,
-#contact h1 {
-  padding-top: 4rem;
+#contact h1,
+#products h1 {
+  padding: 5rem 0 3rem;
 }
 
-form .input {
-  margin-top: 2rem;
-  position: relative;
+#products .card {
+  transition: .3s;
 }
 
-form .input input {
-  width: 100%;
+#products .card:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+#ig {
   outline: none;
-  border: none;
-  background: none;
-  border-bottom: 3px solid var(--bs-body-color);
-  padding: 0.4rem;
+  background: linear-gradient(to right bottom, #dc0025, #be02a8);
+  color: #fff;
 }
 
-form .input input:focus~span,
-form .input input:valid~span {
-  top: -1rem;
-  font-size: 0.8rem;
-  opacity: 1;
+#yt {
+  background: #f20000;
+  color: #fff;
+  transition: .2s;
 }
 
-form .input span {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  font-size: 0.9rem;
-  pointer-events: none;
-  opacity: 0.5;
-  transition: .5s all ease;
+#ig:hover {
+  background: linear-gradient(to left top, #950084, #a8001c);
 }
 
-.btn {
-  border-radius: 0;
-}
-
-.btn-login {
-  border: 1px solid var(--bs-body-color);
-  padding: 0.3rem 0;
-  font-size: 1.2rem;
-  transition: .3s ease;
-}
-
-.btn-login:hover {
-  background-color: var(--bs-body-color) !important;
-  color: var(--bs-body-bg);
-}
-
-@media (min-width: 768px) {
-  #home .login {
-    padding: 6rem 4rem;
-    box-shadow: 0px 0px 10rem var(--bs-body-color);
-  }
-}
-
-/* hp */
-@media (max-width: 576px) {
-
-  #home {
-    padding-top: 0;
-  }
+#yt:hover {
+  background: #af0000;
 }
