@@ -1,6 +1,42 @@
-/* #home {
-  max-height: 100vh;
-} */
+.hero {
+  background-image: url("./img/hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 0 11%;
+  color: #fff;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero h3 {
+  font-size: 4rem;
+  text-shadow: 2px 2px 5px #010101;
+}
+
+.hero p {
+  text-shadow: 2px 2px 5px #010101;
+  font-size: 2rem;
+  letter-spacing: .4rem;
+}
+
+.hero a {
+  padding: .5rem 3rem;
+  color: #010101;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: .3rem;
+  background-color: #01fffb;
+  transition: .3s;
+}
+
+.hero a:hover {
+  background-color: #00b1ae;
+}
 
 #about h1,
 #ourteam h1,
@@ -36,4 +72,14 @@
 
 #yt:hover {
   background: #af0000;
+}
+
+@media (max-width: 576px) {
+  .hero h3 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
 }
