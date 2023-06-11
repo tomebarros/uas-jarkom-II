@@ -24,20 +24,6 @@
   letter-spacing: .4rem;
 }
 
-.hero a {
-  padding: .5rem 3rem;
-  color: #010101;
-  text-decoration: none;
-  font-size: 1.2rem;
-  border-radius: .3rem;
-  background-color: #01fffb;
-  transition: .3s;
-}
-
-.hero a:hover {
-  background-color: #00b1ae;
-}
-
 #about h1,
 #ourteam h1,
 #contact h1,
@@ -58,12 +44,13 @@
   outline: none;
   background: linear-gradient(to right bottom, #dc0025, #be02a8);
   color: #fff;
+  transition: .3s;
 }
 
 #yt {
   background: #f20000;
   color: #fff;
-  transition: .2s;
+  transition: .3s;
 }
 
 #ig:hover {
